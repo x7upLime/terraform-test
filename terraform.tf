@@ -1,5 +1,7 @@
 terraform {
 
+/*
+*** Not needed on VCS-driver workflows
   cloud {
     organization = "andrewdomain"
 
@@ -7,6 +9,7 @@ terraform {
       name = "learn-terraform-cloud"
     }
   }
+*/
 
   required_providers {
     aws = {
