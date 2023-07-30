@@ -1,22 +1,9 @@
 terraform {
 
-/*
-*** Not needed on VCS-driver workflows
-  cloud {
-    organization = "andrewdomain"
-
-    workspaces {
-      name = "learn-terraform-cloud"
-    }
-  }
-*/
-
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.28.0"
+    linode = {
+      source  = "linode/linode"
+      version = "2.5.2"
     }
   }
-
-  required_version = ">= 0.14.0"
 }
