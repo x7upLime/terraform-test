@@ -1,5 +1,5 @@
 provider "linode" {
-  token = var.Linode_token
+  token = ${var.Linode_token}
 }
 
 resource "linode_instance" "nanode-fedora" {
