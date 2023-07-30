@@ -17,7 +17,3 @@ variable "nanode-fedora-image" {
   description = "image we're using for that nanode"
   default     = "linode/Fedora38"
 }
-
-variable "Linode_token" {
-  type = string
-}
