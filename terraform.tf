@@ -1,9 +1,6 @@
 terraform {
-  cloud {
-    organization = "andrewdomain"
-    workspaces {
-      name = "learn-terraform-cloud"
-    }
+  backend "local" {
+    path = "terraform.tfstate"
   }
 
   required_providers {
